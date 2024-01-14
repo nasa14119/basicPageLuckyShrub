@@ -1,0 +1,55 @@
+.nav-product ul{
+  height: 15vh;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-about{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80vh;
+}
+.hero-image img{
+  margin-inline: auto;
+  height: 100%;
+}
+.main-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-text p{
+  font-size: 16px;
+}
+input{
+  display: none;
+}
+input:checked + .btn {
+  background-color: #11998e;
+}
+input:checked + .btn span{
+  visibility: hidden;
+  opacity: 0;
+}
+input:checked + .btn svg{
+  transition: transform ease-out 500ms;
+  transform: translateX(-125%);
+}
+.btn{
+  background-color: #6b6b6b; 
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; 
+  gap: 5px;
+  font-size: 15px; 
+  padding: 1rem;
+}
+.btn > svg{
+  transition: transform ease 500ms;
+  width: 25px;
+}
+.btn > span{
+  transition: opacity ease 500ms;
+  transition-delay: 500ms;
+}
